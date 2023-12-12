@@ -1,0 +1,29 @@
+{
+  "name": "esbuild-example",
+  "version": "1.0.0",
+  "main": "builder.js",
+  "author": "Vsion",
+  "scripts": {
+    "serve": "serve dist -p 3001",
+    "clean": "rimraf dist",
+    "dev": "node esbuild.config.dev.mjs",
+    "build": "npm run clean && node esbuild.config.mjs"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "serve": "^14.2.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.25",
+    "@types/react-dom": "^18.0.8",
+    "esbuild": "^0.19.9",
+    "esbuild-css-modules-plugin": "^2.6.2",
+    "esbuild-plugin-svgr": "^2.1.0",
+    "esbuild-sass-plugin": "^2.4.0",
+    "typescript": "^4.8.4"
+  },
+  "overrides": {
+    "chokidar": "^3.5.3"
+  }
+}
