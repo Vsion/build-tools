@@ -16,6 +16,9 @@ function App({}: AppProps) {
   return (
     <div className="App">
       <header className="App-header">
+        <h1>
+          Snowpack: Hello World!
+        </h1>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
@@ -26,11 +29,11 @@ function App({}: AppProps) {
         <p>
           <a
             className="App-link"
-            href="https://reactjs.org"
+            href="https://www.snowpack.dev/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            Learn React
+            Learn
           </a>
         </p>
       </header>
