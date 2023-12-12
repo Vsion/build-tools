@@ -36,7 +36,6 @@ await esbuild.build({
   loader: {
     '.css': 'css',
   },
-  watch: process.env.NODE_ENV === 'dev',
   plugins: [
     svgr(),
   ]
