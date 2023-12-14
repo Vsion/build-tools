@@ -1,5 +1,6 @@
 {
   "name": "snowpack-example",
+  "author": "Vsion",
   "description": "npx create-snowpack-app snowpack --template @snowpack/app-template-react --no-install",
   "scripts": {
     "start": "serve build -p 3001",
