@@ -1,4 +1,5 @@
 :root {
+  --promary-color: #0096ff;
   --max-width: 1200px;
   --max-md-width: 48rem;
   --border-radius: 12px;
@@ -140,7 +141,7 @@ body {
 }
 
 a {
-  color: inherit;
+  color: var(--promary-color);
   text-decoration: none;
 }
 

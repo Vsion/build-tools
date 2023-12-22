@@ -1,8 +1,8 @@
 import { Metadata } from 'next';
-import './global.css';
+import '@/app/global.css';
 
 export const metadata: Metadata = {
-  title: 'Turbopack example | Vsion',
+  title: 'sub page - Turbopack example | Vsion',
   // icons: [ '/favicon.ico' ],
 }
 

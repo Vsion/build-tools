@@ -1,8 +1,9 @@
 'use client';
 
+import Link from 'next/link';
 import * as React from 'react';
-import logo from '../public/logo.png';
-import LogoSvg from '../public/logo.svg';
+import logo from './logo.png';
+import LogoSvg from './logo.svg';
 import './page.css';
 
 export default function App() {
@@ -18,13 +19,13 @@ export default function App() {
     <div className="App">
       <header className="App-header">
         <h1>
-          Turbopack: Hello World!
+          Turbopack (with next.js): Hello World!
         </h1>
         <img src={logo.src} className="App-logo" alt="logo" />
         <h1>
           Svg:
         </h1>
-        {/* <LogoSvg style={{ width: '200px', marginBottom: '32px' }} /> */}
+        <LogoSvg style={{ height: '100px', marginBottom: '32px' }} />
         <p>
           Edit <code>app/page.tsx</code> and save to reload.
         </p>
@@ -32,9 +33,18 @@ export default function App() {
           Page has been open for <code>{count}</code> seconds.
         </p>
         <p>
+          <Link
+            className="App-link"
+            href="/sub"
+          >
+            to sub page
+          </Link>
+        </p>
+        or
+        <p>
           <a
             className="App-link"
-            href="https://parceljs.org/getting-started/webapp/"
+            href="https://turbo.build/pack/docs"
             target="_blank"
             rel="noopener noreferrer"
           >
